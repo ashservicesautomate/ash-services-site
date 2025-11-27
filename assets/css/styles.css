@@ -1,0 +1,13 @@
+
+body { font-family: Arial; margin:0; background:#f1f5f9; }
+.container { max-width:1100px; margin:auto; padding:20px; }
+.logo { height:60px; }
+.site-header { background:white; border-bottom:1px solid #ddd; }
+.row { display:flex; align-items:center; justify-content:space-between; }
+.lang-switch button { padding:6px 12px; margin-left:8px; border-radius:6px; border:1px solid #444; background:white; cursor:pointer; }
+h1, h2, h3 { margin:10px 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+.card { background:white; padding:16px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); }
+form { display:grid; gap:10px; background:white; padding:16px; border-radius:10px; }
+form input, form textarea { width:100%; padding:8px; border-radius:6px; border:1px solid #aaa; }
+button { padding:10px 20px; border-radius:8px; background:#0ea5a4; color:white; border:none; cursor:pointer; }

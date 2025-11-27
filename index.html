@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASH Services — אוטומציה, BI וקידום לעסקים</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container row">
+    <img src="assets/images/ash_services_logo.png" class="logo" alt="ASH Services">
+    <div class="lang-switch">
+      <button onclick="setLang('he')">עברית</button>
+      <button onclick="setLang('en')">English</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+<section id="hero">
+  <h1 data-he="אוטומציה, BI וקידום — זמינים עכשיו גם לעסקים קטנים ובינוניים"
+      data-en="Automation, BI & Promotion — designed for small and medium businesses">
+      אוטומציה, BI וקידום — זמינים עכשיו גם לעסקים קטנים ובינוניים
+  </h1>
+
+  <p class="lead"
+     data-he="אנחנו מספקים לעסקים את הכלים של החברות הגדולות — במחיר נגיש בהרבה."
+     data-en="We provide businesses with enterprise-grade tools — at a much more accessible price.">
+     אנחנו מספקים לעסקים את הכלים של החברות הגדולות — במחיר נגיש בהרבה.
+  </p>
+</section>
+
+<section id="services">
+  <h2 data-he="מה אנחנו מציעים" data-en="What We Offer">מה אנחנו מציעים</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3 data-he="אוטומציה" data-en="Automation">אוטומציה</h3>
+      <p data-he="הטמעת תהליכים אוטומטיים שחוסכים זמן ומפחיתים טעויות."
+         data-en="Implementing automated workflows that save time and reduce errors.">
+         הטמעת תהליכים אוטומטיים שחוסכים זמן ומפחיתים טעויות.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-he="בינה עסקית (BI)" data-en="Business Intelligence (BI)">בינה עסקית (BI)</h3>
+      <p data-he="בניית דשבורדים וניתוחים מותאמים אישית לעסק."
+         data-en="Custom dashboards and insights tailored to your business.">
+         בניית דשבורדים וניתוחים מותאמים אישית לעסק.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 data-he="קידום ופרסום" data-en="Promotion & Marketing">קידום ופרסום</h3>
+      <p data-he="פתרונות שיווק בעלות נמוכה שמגדילים נוכחות ולקוחות."
+         data-en="Affordable marketing solutions that increase reach and leads.">
+         פתרונות שיווק בעלות נמוכה שמגדילים נוכחות ולקוחות.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2 data-he="מי אנחנו" data-en="About Us">מי אנחנו</h2>
+  <p data-he="ASH Services מספקת שירותי אוטומציה, BI וקידום במחירים שמתאימים לעסקים קטנים ובינוניים."
+     data-en="ASH Services delivers automation, BI, and promotion services at prices suitable for SMBs.">
+     ASH Services מספקת שירותי אוטומציה, BI וקידום במחירים שמתאימים לעסקים קטנים ובינוניים.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 data-he="יצירת קשר" data-en="Contact">יצירת קשר</h2>
+  <form>
+    <label data-he="שם" data-en="Name">שם</label>
+    <input type="text" required>
+
+    <label data-he="אימייל" data-en="Email">אימייל</label>
+    <input type="email" required>
+
+    <label data-he="הודעה" data-en="Message">הודעה</label>
+    <textarea rows="4" required></textarea>
+
+    <button type="submit" data-he="שליחה" data-en="Send">שליחה</button>
+  </form>
+</section>
+
+</main>
+
+<script>
+// Default Hebrew
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
+
+  document.querySelectorAll('[data-he]').forEach(el => {
+    el.textContent = lang === 'he' ? el.dataset.he : el.dataset.en;
+  });
+}
+</script>
+
+</body>
+</html>
